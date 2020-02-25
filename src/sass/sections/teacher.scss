@@ -1,0 +1,75 @@
+.teacher {
+    width: 320px;
+    padding:0 20px;
+    
+}
+
+.section__title {
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: rgb(17, 21, 23);
+    font-weight: bold;
+    line-height: 1.5;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  
+  .item__name {
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: rgb(17, 21, 23);
+    font-weight: bold;
+    line-height: 1.823;
+  }
+  
+  .about__teacher {
+    font-size: 13px;
+    font-family: "Montserrat";
+    color: rgb(17, 21, 23);
+    font-weight: bold;
+  }
+  
+.list__about__teacher::before {
+content: "";
+display: block;
+}
+
+.сheck::before {
+    background-image: url(../../images/icons/check/noun_Check_2422424.svg);
+    width: 16px;
+    height: 12px;
+    fill: orange;
+    display: block;
+    content: "";
+    position: absolute;
+}
+
+.section-direction::after{
+    display: block;     
+    content: "";
+    width: 60px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 35px;
+    background-color: rgb(243, 129, 129);
+}
+
+.text__description {
+    font-size: 11px;
+    font-family: "Montserrat";
+    color: rgb(133, 133, 133);
+    line-height: 1.818;
+}
+
+.togo {
+    font-size: 11px;
+    font-family: "Montserrat";
+    color: rgb(255, 107, 8);
+    text-decoration: underline;
+    line-height: 2.652;
+  }
+
+
+  
+
+  
