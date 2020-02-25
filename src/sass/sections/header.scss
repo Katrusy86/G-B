@@ -1,0 +1,166 @@
+
+
+
+.header {
+    background-image: url(../../images/photos/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navigation {
+    padding-top: 26px;
+    padding-bottom: 52px;
+}
+
+
+.logo__image {
+    width: 80px;
+    height: 32px;
+}
+
+.main-title {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(24, 25, 29);
+    font-weight: 700;
+    line-height: 1.45;
+    text-align: left;
+    letter-spacing: 0.6px;
+    margin: 0;
+    padding-bottom: 34px;
+}
+
+.main-title__comment {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: $about-color;
+    line-height: 1.355;
+}
+
+.main-title__description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.355;
+    font-weight: 700;
+    text-align: left;
+    color: $main-color;
+    letter-spacing: 0.75px;
+    padding-bottom: 40px;
+}
+
+.main-title__point {
+    color: $decor-color;
+}
+
+
+.button-action {
+    width: 250px;
+    height: 48px;
+    border: none;
+    background-color: $decor-color;
+    color: $secondary-color;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.43px;
+    margin-bottom: 36px;
+}
+
+.site-image {
+    margin-bottom: 88px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.features {
+    padding-bottom: 52px;
+}
+
+.features__item {
+    padding-left: 68px;
+    position: relative;
+    margin-bottom: 48px;
+    background-image: url(../../images/photos/bg.jpg);
+}
+
+
+.features__item_about {
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    color: $main-color;
+    font-weight: bold;
+    line-height: 1.538;
+    text-align: left;
+    letter-spacing: 0.65px;
+    margin-left: 12px;
+    padding-right: 70px;
+}
+
+.features__item_about::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 34px;
+    background-color: $secondary-color;
+    position: absolute;
+    transform: translate(-24px, 12px);
+}
+
+
+.features__item::before {
+    content: "";
+    display: block;
+    width: 58px;
+    height: 55px;
+    border-width: 2px;
+    border-color: rgb(255, 107, 8);
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    left: 1px;
+
+}
+
+.student::before {
+    background-image: url(../../images/icons/female-student/noun_Female-Student_2575636.svg);
+    background-repeat: no-repeat;
+    background-position: center top 6px;
+    
+}
+
+.mobile::before {
+    background-image: url(../../images/icons/mobile-learning/noun_Mobile-Learning_2671727.svg);
+    background-repeat: no-repeat;
+    background-position: center top 6px;
+}
+
+.insurance::before {
+    background-image: url(../../images/icons/insuarance/noun_insurance_1989980.svg);
+    background-repeat: no-repeat;
+    background-position: center top 6px;
+    
+}
+  
+
+
+
+
+
+
+
+
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
