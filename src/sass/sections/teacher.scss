@@ -4,7 +4,7 @@
     color: rgb(17, 21, 23);
     font-weight: bold;
     line-height: 1.5;
-    padding-top: 50px;
+    padding-top: 250px;
     padding-bottom: 30px;
   }
   
@@ -110,6 +110,35 @@
     line-height: 2.652;
     padding-bottom: 58px;
   }
+
+@media screen and (min-width:768px) {
+  .container {
+      width: 688px;
+  }
+}
+
+.container {
+  display: flex;
+  
+}
+
+// .section__title {
+//   position: absolute;
+// }
+
+.teacher__picture {
+  position: absolute;
+  padding-left: 0;
+}
+
+.about__teacher {
+  position: absolute;
+}
+
+
+
+
+
 
 
   
