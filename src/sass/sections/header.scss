@@ -2,6 +2,14 @@
   background-image: url(../../images/photos/bg.jpg);
   background-repeat: no-repeat;
   background-position: center 550px;
+  
+}
+
+.header__image {
+  margin-bottom: 88px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 90px;
 }
 
 .navigation {
@@ -91,13 +99,6 @@
   margin-bottom: 36px;
 }
 
-.header__image {
-  margin-bottom: 88px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 90px;
-}
-
 .features {
   padding-bottom: 52px;
   margin: 0 auto;
@@ -107,7 +108,6 @@
 .features__item {
   padding-left: 68px;
   position: relative;
-
 }
 
 .features__item::before {
@@ -121,7 +121,6 @@
   position: absolute;
   top: 0;
   left: 1px;
-
 }
 
 .features__item_about {
@@ -186,14 +185,12 @@
 
   .header {
     background-image: url(../images/photos/Shape-tab.jpg);
-    background-position: center 35px;
+    background-position: center -225px;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    // background-position: center 35px;
   }
-
-  .box {
-    position: relative;
-  }
-
-
 
   .header__image {
     position: absolute;
@@ -202,6 +199,10 @@
     right: 8px;
     top: 137px;
     border-radius: 50%;
+  }
+
+  .box {
+    position: relative;
   }
 
   .navigation {
@@ -234,11 +235,11 @@
     font-size: 26px;
     margin-bottom: 30px;
     width: 272px;
-    // position: relative;
   }
 
   .main-title__description {
     margin-bottom: 36px;
+    width: 289px;
   }
 
   .main-title__point {
@@ -273,20 +274,23 @@
     margin-bottom: 130px;
   }
 
-  .main-title__description {
-    width: 289px;
-  }
-
+  
 }
 
 @media (min-width: 1280px) {
 
   .header {
     background-image: url(../images/photos/shape-desk.jpg);
-    background-position: center;
-    
+    background-position: center -140px;
+    // background-position: center;
   }
-  
+
+  .header__image {
+    width: 680px;
+    height: 588px;
+    right: 44px;
+    top: 200px;
+  }
   
   .navigation {
     margin-bottom: 130px;
@@ -321,13 +325,6 @@
     width: 500px;
   }
 
-  .header__image {
-    width: 680px;
-    height: 588px;
-    right: 44px;
-    top: 200px;
-  }
-
   .main-title__comment {
     font-size: 18px;
   }
@@ -350,14 +347,6 @@
 
   .features__item {
     min-width: 378px;
-  
-  }
-
-  .features__item_about {
-    font-size: 18px;
-    padding-top: 15px;
-    padding-left: 15px;
-  
   }
 
   .features__item::before {
@@ -366,7 +355,12 @@
     padding-bottom: 88px;
     
   }
-  
+
+  .features__item_about {
+    font-size: 18px;
+    padding-top: 15px;
+    padding-left: 15px;
+  }
 
   .features__item_about::after {
     bottom: 1px;
