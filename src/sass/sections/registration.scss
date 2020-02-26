@@ -74,10 +74,12 @@
 
 .input:required:focus:invalid {
     border: 2px solid red;
+    outline: none;
 }
 
 .input:required:focus:valid {
     border: 2px solid green;
+    outline: none;
  }
 
 .input::placeholder:focus {
