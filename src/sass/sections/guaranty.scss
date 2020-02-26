@@ -1,0 +1,66 @@
+// .guaranty {
+//     width: 320px;
+//     padding: 0 20px;
+// }
+
+.section__title {
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: rgb(17, 21, 23);
+    font-weight: bold;
+    line-height: 3.127;
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(241, 241, 241);
+}
+
+.guaranty__list {
+    position: relative;
+    padding-top: 30px;
+}
+
+.guaranty__list::before {
+    content: "";
+    border-width: 1px;
+    border-color: rgb(186, 186, 186);
+    border-style: dotted;
+    position: absolute;
+    left: 26px;
+    width: 0px;
+    height: 262px;
+  }
+  
+.list__item {
+    font-size: 11px;
+    font-family: "Montserrat";
+    color: rgb(24, 25, 29);
+    line-height: 1.818; 
+    padding-bottom: 29px;
+    padding-left: 37px;
+    position: relative;
+}
+
+.list__item::before {
+    width: 13px;
+    height: 18px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    background-image: url(../../images/icons/fire/noun_Campfire_2425646.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    // position: relative;
+}
+
+.orange {
+    font-size: 11px;
+    font-family: "Montserrat";
+    color: rgb(255, 107, 8);
+  }
+
+    
+  
