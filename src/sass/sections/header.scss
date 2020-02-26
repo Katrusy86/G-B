@@ -6,43 +6,67 @@
 
 .navigation {
   padding-top: 26px;
-  padding-bottom: 52px;
+  margin-bottom: 50px;
+}
+
+.navigation__list {
+  display: none;
+}
+
+.navigation__burger {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+}
+
+.navigation__wrapper {
+  width: 324px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-call {
+  display: none;
 }
 
 
 .logo__image {
   width: 80px;
   height: 32px;
+  position: relative;
 }
 
 .main-title {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   color: rgb(24, 25, 29);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.45;
   text-align: left;
   letter-spacing: 0.6px;
   margin: 0;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
 }
+
 
 .main-title__comment {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   color: $about-color;
   line-height: 1.355;
+  letter-spacing: 0.75px;
 }
 
 .main-title__description {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 1.355;
-  font-weight: 700;
+  font-weight: 790;
   text-align: left;
   color: $main-color;
   letter-spacing: 0.75px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .main-title__point {
@@ -51,6 +75,8 @@
 
 
 .button-action {
+  display: block;
+  margin: 0 auto;
   width: 250px;
   height: 48px;
   border: none;
@@ -65,7 +91,7 @@
   margin-bottom: 36px;
 }
 
-.site-image {
+.header__image {
   margin-bottom: 88px;
   display: block;
   margin: 0 auto;
@@ -74,16 +100,14 @@
 
 .features {
   padding-bottom: 52px;
+  margin: 0 auto;
+  max-width: 210px;
 }
 
 .features__item {
   padding-left: 68px;
   position: relative;
-//   margin-bottom: 48px;
-}
 
-.features__item:not(:last-child) {
-    margin-bottom: 48px;
 }
 
 .features__item::before {
@@ -104,7 +128,7 @@
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
   color: $main-color;
-  font-weight: bold;
+  font-weight: 800;
   line-height: 1.538;
   text-align: left;
   letter-spacing: 0.65px;
@@ -112,13 +136,15 @@
   padding-right: 70px;
 }
 
-.features__item_about::before {
+
+.features__item_about::after {
   content: "";
   display: block;
   width: 6px;
   height: 34px;
   background-color: $secondary-color;
   position: absolute;
+  top: 1px;
   transform: translate(-24px, 12px);
 }
 
@@ -137,32 +163,216 @@
 }
 
 .insurance::before {
-  background-image: url(../../images/icons/insuarance/noun_insurance_1989980.svg);
+  background-image: url(../images/icons/insuarance/noun_insurance_1989980.svg);
   background-repeat: no-repeat;
   background-position: center top 6px;
 
 }
 
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
 
 @media (min-resolution: 192dpi) {
   .header {
-    background-image: url(../../images/photos/bg@2x.jpg);
+    background-image: url(../images/photos/bg@2x.jpg);
   }
 }
 
-// @media (max-width: 767px) {
-//     .features__item:not(:last-child) {
-//         margin-bottom: 48px;
-//     }
-// }
+@media (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .header {
+    background-image: url(../images/photos/Shape-tab.jpg);
+    background-position: center 35px;
+  }
+
+  .box {
+    position: relative;
+  }
+
+
+
+  .header__image {
+    position: absolute;
+    height: 320px;
+    width: 360px;
+    right: 8px;
+    top: 137px;
+    border-radius: 50%;
+  }
+
+  .navigation {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation__burger {
+    position: unset;
+  }
+
+  .button-call {
+    display: table;
+    width: 250px;
+    height: 48px;
+    border: 2px solid $decor-color;
+    background-color: $secondary-color;
+    color: $decor-color;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.43px;
+  }
+
+  .main-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+    width: 272px;
+    // position: relative;
+  }
+
+  .main-title__description {
+    margin-bottom: 36px;
+  }
+
+  .main-title__point {
+    display: block;
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .features__item {
+    margin-bottom: 0;
+  }
+
+  .features__item:nth-child(1) {
+    margin-right: 58px;
+  }
+
+  .features__item:nth-child(2) {
+    margin-right: 56px;
+  }
+
+
+  .features__item_about {
+    padding-right: 0;
+  }
+
+  .button-action {
+    margin: 0;
+    margin-bottom: 130px;
+  }
+
+  .main-title__description {
+    width: 289px;
+  }
+
+}
+
+@media (min-width: 1280px) {
+
+  .header {
+    background-image: url(../images/photos/shape-desk.jpg);
+    background-position: center;
+    
+  }
+  
+  
+  .navigation {
+    margin-bottom: 130px;
+  }
+
+  .navigation__burger {
+    display: none;
+  }
+
+  .navigation__list {
+    margin-left: 100px;
+    display: flex;
+    width: 568px;
+    justify-content: space-between;
+  }
+
+  .navigation__link {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    color: $about-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 9.167;
+  }
+
+  .navigation__link:hover {
+    color: $decor-color;
+  }
+
+  .main-title {
+    font-size: 48px;
+    width: 500px;
+  }
+
+  .header__image {
+    width: 680px;
+    height: 588px;
+    right: 44px;
+    top: 200px;
+  }
+
+  .main-title__comment {
+    font-size: 18px;
+  }
+
+  .main-title__description {
+    font-size: 18px;
+    width: 466px;
+    margin-bottom: 66px;
+  }
+
+  .main-title__point {
+    display: inline;
+  }
+
+  .button-action {
+    margin-bottom: 214px;
+  }
+
+  
+
+  .features__item {
+    min-width: 378px;
+  
+  }
+
+  .features__item_about {
+    font-size: 18px;
+    padding-top: 15px;
+    padding-left: 15px;
+  
+  }
+
+  .features__item::before {
+    width: 102px;
+    height: 102px;
+    padding-bottom: 88px;
+    
+  }
+  
+
+  .features__item_about::after {
+    bottom: 1px;
+    height: 76px;
+    left: 122px;
+    z-index: 1;
+  }
+
+  }

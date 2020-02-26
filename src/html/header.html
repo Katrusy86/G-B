@@ -13,13 +13,19 @@
 
 </html>
 <header class="header">
-  <div class="container">
+  <div class="container box">
     <nav class="navigation">
       <a href="#" class="logo">
-        <img srcset="../images/photos/logo.jpg 79w, ../images/photos/logo@2x.jpg 158w" src="../images/photos/logo.jpg"
-          alt="logo" class="logo__image">
+        
+        <img srcset="../images/photos/logo.jpg 79w, ../images/photos/logo@2x.jpg 158w" 
+        src="../images/photos/logo.jpg"
+          alt="logo" 
+          sizes="79px"
+          height="31"
+          class="logo__image">
       </a>
-      <ul class="navigation__list visually-hidden">
+      
+      <ul class="navigation__list ">
         <li class="navigation__item">
           <a href="#" class="navigation__link">программа обучения</a>
         </li>
@@ -32,10 +38,14 @@
         <li class="navigation__item">
           <a href="#" class="navigation__link">контакты</a>
         </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">консультация по телефону</a>
-        </li>
       </ul>
+      <div class="navigation__wrapper">
+      <button class="button-call">Консультация по телефону</button>
+      <img class="navigation__burger"
+      srcset="./images/photos/burger.jpg 24w, ./images/photos/burger@2x 12w"
+      sizes="24px"
+      height="12" >
+    </div>
     </nav>
 
 
@@ -47,11 +57,14 @@
 
     <button class="button-action">Хочу на бесплатное занятие</button>
 
-
-
-    <img srcset="../images/photos/header.jpg 182w, ../images/photos/header@2x.jpg 364w"
-      src="../images/photos/header.jpg" alt="lesson" class="site-image" sizes="182px" height="185">
-
+<picture class="header__picture">
+<source srcset="./images/photos/header-desk.jpg 1x, ./images/photos/header-desk@2x.jpg 2x" media="(min-width: 1280px)">
+<source srcset="./images/photos/header-tab.jpg 1x, ./images/photos/header-tab@2x.jpg 2x" media="(min-width: 768px)">
+<source srcset="./images/photos/header.jpg 1x, ./images/photos/header@2x.jpg 2x" media="(min-width: 320px)">
+    <img  src="./images/photos/header.jpg" 
+      alt="lesson" 
+      class="header__image">
+    </picture>
 
 
     <ul class="features">
