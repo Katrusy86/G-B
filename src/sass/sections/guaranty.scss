@@ -32,7 +32,18 @@
     height: 262px;
   }
   
-.list__item {
+// .list__item {
+//     font-size: 11px;
+//     font-family: "Montserrat";
+//     color: rgb(24, 25, 29);
+//     line-height: 1.818; 
+//     padding-bottom: 29px;
+//     padding-left: 37px;
+//     position: relative;
+//     letter-spacing: 0.55px;
+// }
+
+.list__item-text {
     font-size: 11px;
     font-family: "Montserrat";
     color: rgb(24, 25, 29);
@@ -40,6 +51,7 @@
     padding-bottom: 29px;
     padding-left: 37px;
     position: relative;
+    letter-spacing: 0.55px;
 }
 
 .list__item::before {
@@ -63,4 +75,12 @@
   }
 
     
+  
+  .Ты_сдашь_ВНО_минимум_на_25_баллов_лучше__чем_на {
+    font-size: 11px;
+    font-family: "Montserrat";
+    color: rgb(24, 25, 29);
+    line-height: 1.818;
+    
+  }
   
