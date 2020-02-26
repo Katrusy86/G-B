@@ -111,29 +111,64 @@
     padding-bottom: 58px;
   }
 
-@media screen and (min-width:768px) {
-  .container {
-      width: 688px;
+
+  .Опыт_подготовки_учеников__к_ВНО___6_лет_Собстве {
+    font-size: 13px;
+    font-family: "Montserrat";
+    color: rgb(17, 21, 23);
+    font-weight: bold;
+    line-height: 0.538;
+    position: absolute;
+    left: 52.938px;
+    top: 5932.121px;
+    width: 243px;
+    height: 182px;
+    z-index: 364;
   }
-}
 
-.container {
-  display: flex;
+  @media screen and (min-width:768px) {
+    .container {
+        width: 688px;
+    }
+
+    .section__title {
+      font-size: 26px;
+      font-family: "Montserrat";
+      color: rgb(17, 21, 23);
+      font-weight: bold;
+      line-height: 2.405;
+    }
+
+    .teacher__img__text-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .img__container {
+      width:30%; /*Пересчитать или в пх или оставить в прц (но тоже пересчитать)*/
+    }
+
+    .text__wrapper {
+      width:70%; 
+      padding-left: 30px;
+    }
+
+    .item__name {
+      padding-top: 0;
+    }
+
+  }
+
+  @media screen and (min-width:1280px) {
+    .container {
+        width: 1210px;
+    }
+  }
+
   
-}
-
-// .section__title {
-//   position: absolute;
-// }
-
-.teacher__picture {
-  position: absolute;
-  padding-left: 0;
-}
-
-.about__teacher {
-  position: absolute;
-}
+  
+  
+  
 
 
 
