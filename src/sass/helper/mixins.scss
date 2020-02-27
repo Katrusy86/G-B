@@ -5,7 +5,6 @@
   line-height: $lh;
   letter-spacing: $ls;
 }
-
 @mixin section-items($ff: "Montserrat", $fs: 18px, $fw: bold, $lh: 1.556, $ls: 0.9) {
   font-family: $ff;
   font-size: $fs;

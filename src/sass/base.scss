@@ -31,6 +31,19 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path:inset(100%);
+          clip-path:inset(100%);
+  clip:rect(0 0 0 0);
+  overflow:hidden;
+}
 
 .container {
   width: 280px;
@@ -39,20 +52,10 @@ a {
 
 @media screen and (min-width:768px) {
   .container {
-    width: 688px;
-  }
-}
-
-@media screen and (min-width:1280px) {
-  .container {
-    width: 1210px;
-  }
-}
-@media screen and (min-width:768px) {
-  .container {
       width: 688px;
   }
 }
+
 @media screen and (min-width:1280px) {
   .container {
       width: 1210px;
