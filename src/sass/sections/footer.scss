@@ -72,6 +72,11 @@
 
     .footer_logotype {
         margin: 0;
+
+        &:hover {
+            animation-name: tada;
+            animation-duration: 1s;
+          }
     }
 
     .footer-section {
