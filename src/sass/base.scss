@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap&subset=cyrillic,cyrillic-ext');
 html {
   box-sizing: border-box;
 }
@@ -49,13 +50,11 @@ a {
   width: 280px;
   margin: 0 auto;
 }
-
 @media screen and (min-width:768px) {
   .container {
       width: 688px;
   }
 }
-
 @media screen and (min-width:1280px) {
   .container {
       width: 1210px;
