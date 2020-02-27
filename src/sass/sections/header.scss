@@ -184,7 +184,7 @@
 }
 
 
-.button-action {
+.page-header__button-action {
   display: block;
   margin: 0 auto;
   width: 250px;
@@ -201,8 +201,8 @@
   margin-bottom: 36px;
 }
 
-.button-action:hover,
-.button-action:focus {
+.page-header__button-action:hover,
+.page-header__button-action:focus {
   animation-name: heartBeat;
   animation-duration: 2s;
 }
@@ -381,7 +381,7 @@
     padding-right: 0;
   }
 
-  .button-action {
+  .page-header__button-action {
     margin: 0;
     margin-bottom: 130px;
   }
@@ -461,7 +461,7 @@
     display: inline;
   }
 
-  .button-action {
+  .page-header__button-action {
     margin-bottom: 214px;
   }
 
