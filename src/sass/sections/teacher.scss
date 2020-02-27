@@ -36,22 +36,36 @@
     color: rgb(17, 21, 23);
     font-weight: bold;
   }
-  
-// .list__about__teacher::before {
-// content: "";
-// display: block;
-// }
-
 
 .list__about__teacher {
     position: relative;
     padding-left: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 27px;
 }
 
+.text {
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: rgb(17, 21, 23);
+  font-weight: bold;
+  line-height: 1.538;
+  letter-spacing: 1px;
+  padding-right: 9px;
+}
+
+// .text__span {
+//   display: block;
+//   font-size: 13px;
+//   font-family: "Montserrat";
+//   color: rgb(17, 21, 23);
+//   font-weight: bold;
+//   line-height: 1.538;
+//   letter-spacing: 1px;
+// }
+
 .list__about__teacher::before {
-    width: 16px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
     content: "";
     display: block;
     position: absolute;
@@ -74,32 +88,35 @@
 //     position: absolute;
 // }
 
+
+.text__description {
+  position: relative;
+}
+
 .text__description::before {
     display: block;     
     content: "";
     margin-top: 23px;
     margin-bottom: 22px;
     background-color: rgb(255, 107, 8);
-    left: 35px;
+    left: 14px;
     width: 25px;
     height: 2px;
+    padding-left: 13px;
+    position: absolute;
+    top: -31px
 }
 
-.text__description {
-    font-size: 11px;
-    font-family: "Montserrat";
-    color: rgb(133, 133, 133);
-    line-height: 1.818;
-    padding-left: 16px;
-}
+
 
 .text__description__teacher {
     font-size: 11px;
     font-family: "Montserrat";
     color: rgb(133, 133, 133);
     line-height: 1.818;
-    left: 34.937px;
-    margin-bottom: 27px;    
+    // left: 34.937px;
+    margin-bottom: 27px;
+    padding-left: 13px;
 }
 
 .togo {
@@ -109,33 +126,16 @@
     text-decoration: underline;
     line-height: 2.652;
     padding-bottom: 58px;
+    padding-left: 11px;
   }
 
 
-  .Опыт_подготовки_учеников__к_ВНО___6_лет_Собстве {
-    font-size: 13px;
-    font-family: "Montserrat";
-    color: rgb(17, 21, 23);
-    font-weight: bold;
-    line-height: 0.538;
-    position: absolute;
-    left: 52.938px;
-    top: 5932.121px;
-    width: 243px;
-    height: 182px;
-    z-index: 364;
-  }
+//////////////TABLET//////////////
 
   @media screen and (min-width:768px) {
-    .container {
-        width: 688px;
-    }
 
     .section__title {
       font-size: 26px;
-      font-family: "Montserrat";
-      color: rgb(17, 21, 23);
-      font-weight: bold;
       line-height: 2.405;
     }
 
@@ -145,25 +145,153 @@
     }
 
     .img__container {
-      width:30%; /*Пересчитать или в пх или оставить в прц (но тоже пересчитать)*/
+    width: 245px; /*Пересчитать или в пх или оставить в прц (но тоже пересчитать)*/
     }
 
-    .text__wrapper {
-      width:70%; 
-      padding-left: 30px;
-    }
+     .text__wrapper {
+     width: 404px; 
+    //   // padding-left: 30px;
+     }
 
     .item__name {
       padding-top: 0;
+      font-size: 20px;
     }
 
+    .item__name::after {
+      display: block;
+      content: "";
+      width: 396px;
+      height: 1px;
+      margin: 0 auto;
+      margin-top: 17px;
+      background-color: rgb(133, 133, 133);
+      opacity: 0.38;
+      margin-bottom: 26px;
   }
+
+    .text {
+      font-size: 13px;
+      font-family: "Montserrat";
+      color: rgb(17, 21, 23);
+      font-weight: bold;
+      line-height: 1.538;
+    }
+
+
+
+    .text__description__teacher {
+      font-size: 11px;
+      font-family: "Montserrat";
+      color: rgb(133, 133, 133);
+      line-height: 1.818;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+}
+
+  //////////DESKTOP////////////
 
   @media screen and (min-width:1280px) {
-    .container {
-        width: 1210px;
+
+    .section__title {
+      font-size: 42px;
+      line-height: 1.489;
     }
+
+    .teacher__img__text-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .img__container {
+    width: 495px; /*Пересчитать или в пх или оставить в прц (но тоже пересчитать)*/
+    }
+
+     .text__wrapper {
+     width: 610px; 
+    //   // padding-left: 30px;
+     }
+
+    .item__name {
+      padding-top: 0;
+      font-size: 29px;
+      line-height: 1;
+    }
+
+    .item__name::after {
+      display: block;
+      content: "";
+      width: 610px;
+      height: 1px;
+      margin: 0 auto;
+      margin-top: 17px;
+      background-color: rgb(133, 133, 133);
+      opacity: 0.38;
+      margin-bottom: 26px;
   }
+
+  .list__about__teacher {
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 35px;
+}
+
+.list__about__teacher:not(last-child) {
+  margin-bottom: 35px;
+}
+
+
+    .text {
+      font-size: 16.667pxpx;
+      font-family: "Montserrat";
+      color: rgb(17, 21, 23);
+      font-weight: bold;
+      line-height: 1.75;
+      padding-bottom: 35px;
+    }
+
+    .text__description {
+      padding-top: 76px;
+    }
+
+
+
+    .text__description__teacher {
+      font-size: 11px;
+      font-family: "Montserrat";
+      color: rgb(133, 133, 133);
+      line-height: 1.75;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .togo {
+      font-size: 16.667px;
+      font-family: "Montserrat";
+      color: rgb(255, 107, 8);
+      text-decoration: underline;
+      line-height: 1.75;
+      padding-bottom: 58px;
+      padding-left: 11px;
+    }
+    
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+  
+  
 
   
   
