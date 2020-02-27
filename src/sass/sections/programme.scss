@@ -210,7 +210,7 @@
   .programme__list-section-item {
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    // width: 300px;
   }
 
   .programme__list::before {
@@ -218,7 +218,7 @@
   }
 
   .programme__list-block {
-    width: 470px;
+    // width: 470px;
   }
 
   .programme__title {
@@ -296,54 +296,101 @@
 }
 
 @media screen and (min-width:1280px) {
-  .programme__list{
+  .programme__list {
     display: flex;
     justify-content: space-between;
     margin: 0;
+    
   }
 
+
   .programme__list::after {
-    left: -37px;
+    left: -86px;
   }
 
   .programme__list-section-item {
-    width: 0;
+    // width: 0;
     display: block;
   }
-  
+
   .programme__list-block {
-    width: 0;
+    // width: 0;
   }
 
   .programme__list::before {
     // transform: rotate(90deg) translateY(-50%);
     height: 2px;
-    width: 90%;
-    top:8px;
+    width: 100%;
+    left: -36px;
+    top: -45px;
   }
+
   .content {
-   width: 230px;
+    width: 168px;
   }
- 
+
 
   .programme__list::after {
     background-image: url("../../images/photos/programme_desk.png");
     width: 546px;
     height: 420px;
-    top:66%;
+    top: 66%;
   }
+
   .content_last::before {
-   position: absolute;
+    position: absolute;
     width: 25px;
     height: 2px;
     top: 19%;
     transform: translateY(-50%);
-    left: 28%;
+    left: 18%;
   }
-  .programme__title{
+
+
+  .programme__title {
     font-size: 42px;
     line-height: 62px;
-  
+    margin-bottom: 70px;
+
+  }
+
+  .programme__title_zag {
+    font-size: 42px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.346;
+    width: 600px;
+    text-align: center;
+  }
+
+
+  .programme__list-item::before {
+    top: -50px;
+    left: 33px;
+  }
+
+  .program__list {
+    height: 320px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .program__list-wrapper {
+    min-width: 1310px;
+    min-height: 320px;
+    bottom: -137px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .program__list-item {
+    width: 370px;
+    margin-right: 20px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    line-height: 1.62;
   }
 
   @media (min-resolution: 192dpi) {
@@ -351,6 +398,6 @@
       background-image: url("../../images/photos/programme_desk@2x.png");
     }
 
-  
+
   }
 }
