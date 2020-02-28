@@ -17,15 +17,15 @@ const images = () => {
   return gulp
     .src(paths.src.images)
     .pipe(newer(paths.build.images))
-    .pipe(
-      mode.production(
-        imagemin([
-          imagemin.mozjpeg(imageMinConfig.mozjpeg),
-          imagemin.optipng(imageMinConfig.optipng),
-          imagemin.svgo(imageMinConfig.svgo),
-        ]),
-      ),
-    )
+    // .pipe(
+    //   mode.production(
+    //     imagemin([
+    //       imagemin.mozjpeg(imageMinConfig.mozjpeg),
+    //       imagemin.optipng(imageMinConfig.optipng),
+    //       imagemin.svgo(imageMinConfig.svgo),
+    //     ]),
+    //   ),
+    // )
     .pipe(size({ showFiles: true }))
     .pipe(gulp.dest(paths.build.images));
 };

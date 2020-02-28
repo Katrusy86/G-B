@@ -301,14 +301,14 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
-    
+
   }
 
   .programme__list-section-item {
     width: 0;
     display: block;
   }
- 
+
 
   .programme__list-block {
     width: 0;
@@ -328,7 +328,7 @@
 
 
   .programme__list::after {
-    background-image: url("../../images/photos/programme_desk.png");
+    background-image: url("../images/photos/programme_desk.png");
     width: 546px;
     height: 420px;
     top: 68%;
@@ -373,7 +373,7 @@
     top: -50px;
     left: 33px;
   }
- 
+
 
   .program__list {
     height: 340px;
@@ -400,7 +400,7 @@
 
   @media (min-resolution: 192dpi) {
     .programme__list::after {
-      background-image: url("../../images/photos/programme_desk@2x.png");
+      background-image: url("../images/photos/programme_desk@2x.png");
     }
 
 
