@@ -147,10 +147,11 @@
 
 .slider__feedback-image {
 border: 2px solid transparent;
-    &:hover {
-      border: 2px solid $decor-color;
-      border-radius: 50%;
-    }
+
+&_active {
+  border: 2px solid $decor-color;
+  border-radius: 50%;
+}
 }
 
 .slider__list-image-desktop {

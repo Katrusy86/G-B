@@ -12,28 +12,42 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
   var currentIndex = 0;
   var prevIndex = 0;
 
-  function updateSlide(nextIndex) {
-    // console.log(nextIndex);
-    var slides = _toConsumableArray(document.querySelectorAll('.slider__wrapper'));
-
-    slides[prevIndex].classList.remove('active-slides'); // скрыть
-
-    slides[nextIndex].classList.add('active-slides'); // показать
-  } // function updatePagination(nextIndex) {
-  //     var bullets = [...document.querySelectorAll('.slider__btn-wrapper .slider__btn .slider__btn-prev')];
-  //     bullets[prevIndex].classList.remove('acive-slides'); // скрыть
-  //     bullets[nextIndex].classList.add('acive-slides'); // показать
-  // }
-
+  var slides = _toConsumableArray(document.querySelectorAll('.slider__wrapper'));
 
   var sliderBullets = _toConsumableArray(document.querySelectorAll('.slider__feedback-image'));
 
-  sliderBullets.forEach(function (item, index) {
-    item.onclick = function () {
-      prevIndex = currentIndex;
-      currentIndex = index; // update index
+  function updateSlide(nextIndex) {
+    if (nextIndex === 0) {
+      slides[nextIndex].classList.add('active-slides'); // показать
 
-      updateSlide(currentIndex); // updatePagination(currentIndex);
-    };
-  });
+      slides[slides.length - 1].classList.remove('active-slides');
+      sliderBullets[slides.length - 1].classList.remove('slider__feedback-image_active');
+      sliderBullets[nextIndex].classList.add('slider__feedback-image_active');
+    } else {
+      slides[nextIndex - 1].classList.remove('active-slides'); // скрыть
+
+      slides[nextIndex].classList.add('active-slides'); // показать
+
+      sliderBullets[nextIndex - 1].classList.remove('slider__feedback-image_active');
+      sliderBullets[nextIndex].classList.add('slider__feedback-image_active');
+    }
+  } // var sliderBullets = [...document.querySelectorAll('.slider__feedback-image')];
+  // sliderBullets.forEach((item, index) => {
+  //     item.onclick = function() {
+  //         prevIndex = currentIndex;
+  //         currentIndex = index; // update index
+  //         updateSlide(currentIndex);
+  //     }
+  // });
+
+
+  setInterval(function (el) {
+    if (currentIndex >= slides.length - 1) {
+      currentIndex = 0;
+    } else {
+      currentIndex++;
+    }
+
+    updateSlide(currentIndex);
+  }, 1500);
 })();
