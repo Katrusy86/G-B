@@ -488,77 +488,92 @@
     display: none;
   }
 
-  }
+}
 
 
+// MODAL
 
+.modal-window {
+  display: table;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+}
 
+.modal-window__logo {
+  background-image: url(../images/photos/overlay-logo.jpg);
+  width: 160px;
+  height: 76px;
+  border-radius: 60%;
+}
 
-// Modal-window
+.modal-window__logo_image {
+  width: 120px;
+  height: 64px;
+  border-radius: 60%;
+}
 
-// .modal-window {
-//   display: none;
-//   background-color: rgba(0, 0, 0, 0.8);
-//   width: 100%;
-// }
+.modal-window__header_link {
+  background-image: url(../images/icons/exit/cross.svg);
+  width: 30px;
+  height: 30px;
+}
 
 // .modal-window__header_img {
 //   width: 20px;
 //   height: 20px;
 // }
 
-// .modal-window__header {
-//   display: flex;
-//   justify-content: space-between;
-//   margin-bottom: 30px;
-//   margin-top: 30px;
-// }
+.modal-window__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+  margin-top: 30px;
+}
 
-// .modal-window__menu {
-//   margin-bottom: 30px;
-//   padding-left: 30px;
-// }
+.modal-window__menu {
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
 
-// .modal-window__link {
-//   color: white;
-//   font-size: 16px;
-//     font-family: "Montserrat", sans-serif;
-//     font-weight: bold;
-//     text-transform: uppercase;
-//     line-height: 2.5;
-// }
+.modal-window__link {
+  color: white;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.5;
+}
 
-// .modal-window__link:hover {
-//   color: $decor-color;
-// }
+.modal-window__link:hover {
+  color: $decor-color;
+}
 
-// .modal-window__button-call {
-//   display: block;
-//     width: 250px;
-//     height: 48px;
-//     border: 2px solid $decor-color;
-//     background-color: $secondary-color;
-//     color: $decor-color;
-//     text-transform: uppercase;
-//     font-size: 11px;
-//     font-family: "Montserrat", sans-serif;
-//     font-weight: bold;
-//     text-align: center;
-//     letter-spacing: 1.43px;
-//     margin: 0 auto;
-//     margin-bottom: 160px;
-//     background-color: rgba(0, 0, 0, 0.1);
-// } 
+.modal-window__button-call {
+  display: block;
+  width: 250px;
+  height: 48px;
+  border: 2px solid $decor-color;
+  background-color: $secondary-color;
+  color: $decor-color;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1.43px;
+  margin: 0 auto;
+  margin-bottom: 160px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
-// }
+@media (min-width: 1280px) {
+  .modal-window__menu {
+    padding-left: 0;
+    text-align: center;
+  }
 
-// @media (min-width: 1280px) {
-//   .modal-window__menu {
-//     padding-left: 0;
-//     text-align: center;
-//   }
+  .modal-window {
+    display: table;
+  }
+}
 
-//   .modal-window {
-//     display: none;  
-//   }
-// }
