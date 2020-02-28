@@ -8,7 +8,7 @@
   font-family: 'Montserrat';
   font-weight: 800;
   font-size: 20px;
-  color: rgb(255, 255, 255);
+  color: $secondary-color;
   line-height: 33px;
   text-align: center;
   padding-top: 76px;
@@ -42,7 +42,7 @@
   display: block;
   content: "";
   border-radius: 50%;
-  background-color: rgb(255, 107, 8);
+  background-color: $decor-color;
   position: absolute;
   width: 10px;
   height: 10px;
@@ -54,7 +54,7 @@
 .programme__title-item {
   font-size: 15px;
   font-family: "Montserrat";
-  color: rgb(255, 255, 255);
+  color: $secondary-color;
   position: relative;
   font-weight: bold;
   text-transform: uppercase;
@@ -66,7 +66,7 @@
 .programme__list-section-title {
   font-size: 13px;
   font-family: "Montserrat";
-  color: rgb(255, 107, 8);
+  color: $decor-color;
   line-height: 30px;
   margin-bottom: 8px;
   position: relative;
@@ -76,7 +76,7 @@
 .programme__list-section-title::before {
   display: block;
   content: "";
-  background-color: rgb(255, 107, 8);
+  background-color: $decor-color;
   position: absolute;
   width: 25px;
   height: 2px;
@@ -103,7 +103,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  left: 92px;
+  left: 100px;
   bottom: -140px;
 
 }
@@ -111,7 +111,7 @@
 .programme__title_zag {
   font-weight: 800;
   font-size: 20px;
-  color: rgb(255, 255, 255);
+  color: $secondary-color;
   line-height: 33px;
   width: 136px;
   margin-bottom: 15px;
@@ -134,7 +134,7 @@
 .content_last::before {
   display: block;
   content: "";
-  background-color: rgb(255, 107, 8);
+  background-color: $decor-color;
   position: absolute;
   width: 25px;
   height: 2px;
@@ -154,7 +154,7 @@
 }
 
 .program__list {
-  background-color: #ffff;
+  background-color: $secondary-color;
   padding-top: 15px;
   counter-reset: problems-count;
   padding-left: 20px;
@@ -182,7 +182,7 @@
   top: 0;
   left: 35px;
   font-size: 14px;
-  color: rgb(255, 107, 8);
+  color: $decor-color;
 }
 
 .program__list-item::before {
@@ -210,7 +210,7 @@
   .programme__list-section-item {
     display: flex;
     justify-content: space-between;
-    // width: 300px;
+    width: 300px;
   }
 
   .programme__list::before {
@@ -218,7 +218,7 @@
   }
 
   .programme__list-block {
-    // width: 470px;
+    width: 470px;
   }
 
   .programme__title {
@@ -248,7 +248,7 @@
   .content_last::before {
     display: block;
     content: "";
-    background-color: #ff6b08;
+    background-color: $decor-color;
     position: absolute;
     width: 25px;
     height: 2px;
@@ -260,9 +260,9 @@
 
   .program__list-wrapper {
     min-width: 680px;
-    min-height: 340px;
+    min-height: 310px;
     bottom: -160px;
-    left: 53%;
+    left: 50%;
     transform: translateX(-50%);
 
   }
@@ -282,8 +282,9 @@
   .programme__title_zag {
     font-weight: 800;
     font-size: 26px;
-    color: white;
+    color: $secondary-color;
     line-height: 2.405;
+    margin-bottom: 20px;
 
 
     line-height: 1.65;
@@ -303,18 +304,14 @@
     
   }
 
-
-  .programme__list::after {
-    left: -86px;
-  }
-
   .programme__list-section-item {
-    // width: 0;
+    width: 0;
     display: block;
   }
+ 
 
   .programme__list-block {
-    // width: 0;
+    width: 0;
   }
 
   .programme__list::before {
@@ -334,7 +331,8 @@
     background-image: url("../../images/photos/programme_desk.png");
     width: 546px;
     height: 420px;
-    top: 66%;
+    top: 68%;
+    left: -45px;
   }
 
   .content_last::before {
@@ -343,7 +341,7 @@
     height: 2px;
     top: 19%;
     transform: translateY(-50%);
-    left: 18%;
+    left: 29%;
   }
 
 
@@ -351,17 +349,23 @@
     font-size: 42px;
     line-height: 62px;
     margin-bottom: 70px;
+    padding-top: 64px;
 
   }
+  .programme{
+    min-height: 1100px;
+   }
 
   .programme__title_zag {
     font-size: 42px;
     font-family: "Montserrat";
-    color: rgb(255, 255, 255);
+    color: $secondary-color;
     font-weight: bold;
     line-height: 1.346;
     width: 600px;
     text-align: center;
+    top: 685px;
+    letter-spacing: 2px;
   }
 
 
@@ -369,23 +373,24 @@
     top: -50px;
     left: 33px;
   }
+ 
 
   .program__list {
-    height: 320px;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    height: 340px;
+    padding-top: 52px;
+    padding-bottom: 23px;
   }
 
   .program__list-wrapper {
-    min-width: 1310px;
+    min-width: 1210px;
     min-height: 320px;
-    bottom: -137px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .program__list-item {
-    width: 370px;
+    width: 310px;
     margin-right: 20px;
     font-size: 18px;
     font-family: 'Montserrat';
