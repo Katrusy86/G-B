@@ -1,5 +1,25 @@
 "use strict";
 
+(function () {
+  'use strict';
+
+  var burgerBtn = document.querySelector('.navigation__link_burger');
+  var burgerModal = document.querySelector('.modal-window');
+  var burgerBtnClose = document.querySelector('.modal-window__header_link');
+
+  var openModalMenu = function openModalMenu() {
+    burgerModal.classList.add('modal-window_active');
+  };
+
+  var closeModalMenu = function closeModalMenu() {
+    burgerModal.classList.remove('modal-window_active');
+  };
+
+  burgerBtn.addEventListener('click', openModalMenu);
+  burgerBtnClose.addEventListener('click', closeModalMenu);
+})();
+"use strict";
+
 (function ($) {
   $(function () {
     $('.menu__icon').on('click', function () {
