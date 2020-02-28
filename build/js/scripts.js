@@ -1,5 +1,18 @@
 "use strict";
 
+(function ($) {
+  $(function () {
+    $('.menu__icon').on('click', function () {
+      $(this).closest('.menu').toggleClass('menu--show');
+    });
+    $('.menu--show').on('click', function () {
+      // do something
+      $(this).closest('.menu').removeClass('menu--show');
+    });
+  });
+})(jQuery);
+"use strict";
+
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
