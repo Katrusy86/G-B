@@ -1,36 +1,45 @@
 (function() {
     var currentIndex = 0;
     var prevIndex = 0;
-
-    function updateSlide(nextIndex) {
-      // console.log(nextIndex);
-        var slides = [...document.querySelectorAll('.slider__wrapper')];
-
-        slides[prevIndex].classList.remove('active-slides'); // скрыть
-        slides[nextIndex].classList.add('active-slides'); // показать
-    }
-
-    // function updatePagination(nextIndex) {
-    //     var bullets = [...document.querySelectorAll('.slider__btn-wrapper .slider__btn .slider__btn-prev')];
-
-    //     bullets[prevIndex].classList.remove('acive-slides'); // скрыть
-    //     bullets[nextIndex].classList.add('acive-slides'); // показать
-    // }
-
-
+    var slides = [...document.querySelectorAll('.slider__wrapper')];
     var sliderBullets = [...document.querySelectorAll('.slider__feedback-image')];
 
-    sliderBullets.forEach((item, index) => {
+    function updateSlide(nextIndex) {
+      if (nextIndex === 0) {
+        slides[nextIndex].classList.add('active-slides'); // показать
+        slides[slides.length - 1].classList.remove('active-slides');
 
-        item.onclick = function() {
-            prevIndex = currentIndex;
+        sliderBullets[slides.length - 1].classList.remove('slider__feedback-image_active');
+        sliderBullets[nextIndex].classList.add('slider__feedback-image_active');
+      } else {
+        slides[nextIndex - 1].classList.remove('active-slides'); // скрыть
+        slides[nextIndex].classList.add('active-slides'); // показать
 
-            currentIndex = index; // update index
+        sliderBullets[nextIndex - 1].classList.remove('slider__feedback-image_active');
+        sliderBullets[nextIndex].classList.add('slider__feedback-image_active');
+      }
+    }
 
-            updateSlide(currentIndex);
-            // updatePagination(currentIndex);
-        }
-    });
+    // var sliderBullets = [...document.querySelectorAll('.slider__feedback-image')];
 
+    // sliderBullets.forEach((item, index) => {
+
+    //     item.onclick = function() {
+    //         prevIndex = currentIndex;
+
+    //         currentIndex = index; // update index
+
+    //         updateSlide(currentIndex);
+    //     }
+    // });
+setInterval(el => {
+  if (currentIndex >= slides.length -1) {
+    currentIndex = 0;
+  } else {
+    currentIndex++;
+  }
+
+  updateSlide(currentIndex);
+}, 1500);
 
 })();
