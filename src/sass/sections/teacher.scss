@@ -1,8 +1,8 @@
 .section__title {
     font-size: 20px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: rgb(17, 21, 23);
-    font-weight: bold;
+    font-weight: 800;
     line-height: 1.5;
     padding-top: 250px;
     padding-bottom: 30px;
@@ -10,9 +10,9 @@
 
   .item__name {
     font-size: 16px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: rgb(17, 21, 23);
-    font-weight: bold;
+    font-weight: 800;
     line-height: 1.823;
     padding-top: 27px;
     padding-bottom: 10px;
@@ -32,7 +32,7 @@
 
     .about__teacher {
     font-size: 13px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif ;
     color: rgb(17, 21, 23);
     font-weight: bold;
   }
@@ -40,12 +40,15 @@
 .list__about__teacher {
     position: relative;
     padding-left: 36px;
-    margin-bottom: 27px;
+    margin-bottom: 18px;
 }
 
+
+
+
 .text {
-  font-size: 11px;
-  font-family: "Montserrat";
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
   color: rgb(17, 21, 23);
   font-weight: bold;
   line-height: 1.538;
@@ -53,16 +56,6 @@
   padding-right: 9px;
   font-weight: 800;
 }
-
-// .text__span {
-//   display: block;
-//   font-size: 13px;
-//   font-family: "Montserrat";
-//   color: rgb(17, 21, 23);
-//   font-weight: bold;
-//   line-height: 1.538;
-//   letter-spacing: 1px;
-// }
 
 .list__about__teacher::before {
     width: 18px;
@@ -112,6 +105,7 @@
 
 .text__description__teacher {
     font-size: 11px;
+    font-family: "Montserrat", sans-serif;
     color: rgb(133, 133, 133);
     line-height: 20px;
     font-weight: 400;
@@ -120,9 +114,11 @@
     padding-left: 13px;
 }
 
+
+
 .togo {
     font-size: 11px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: rgb(255, 107, 8);
     text-decoration: underline;
     line-height: 2.652;
@@ -172,6 +168,8 @@
   }
 
     .text {
+      font-size: 13px;
+      font-family: "Montserrat", sans-serif;
       color: rgb(17, 21, 23);
       font-weight: bold;
       line-height: 1.538;
@@ -181,6 +179,7 @@
 
     .text__description__teacher {
       font-size: 11px;
+      font-family: "Montserrat", sans-serif;
       color: rgb(133, 133, 133);
       line-height: 1.818;
       letter-spacing: 1px;
@@ -230,40 +229,58 @@
       margin-bottom: 26px;
   }
 
+  .about__teacher {
+    margin-bottom: 34px;
+  }
+
   .list__about__teacher {
     position: relative;
     padding-left: 36px;
-    margin-bottom: 35px;
+    margin-bottom: 16px;
 }
 
-.list__about__teacher:not(last-child) {
-  margin-bottom: 35px;
-}
+// .list__about__teacher:not(:last-child) {
+//   margin-bottom: 35px;
+// }
 
 
     .text {
       font-size: 16.667px;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(17, 21, 23);
+      font-weight: bold;
       line-height: 1.75;
+      // padding-bottom: 35px;
     }
 
     .text__description {
-      padding-top: 76px;
+      padding-top: 36px;
+    }
+
+    .text__description::before {
+      top: -26px;
+    }
+
+    .teacher__image {
+      height: 644px;
     }
 
 
 
     .text__description__teacher {
-      font-size: 11px;
-      font-family: "Montserrat";
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
       color: rgb(133, 133, 133);
       line-height: 1.75;
       letter-spacing: 1px;
-      font-weight: 600;
+      font-weight: 500;
     }
+
+
 
     .togo {
       font-size: 16.667px;
-      font-family: "Montserrat";
+      font-family: "Montserrat", sans-serif;
       color: rgb(255, 107, 8);
       text-decoration: underline;
       line-height: 1.75;
