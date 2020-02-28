@@ -19,9 +19,11 @@
         letter-spacing: 1px;
         line-height: 38px;
         color: #111517;
-        // font-family: "Montserrat";
+        font-family: "Montserrat", sans-serif;
         font-weight: 600;
-        padding-left: 20px;
+        padding-left: 30px;
+
+        
 
         &::before {
             position: absolute;
@@ -72,6 +74,11 @@
 
     .footer_logotype {
         margin: 0;
+
+        &:hover {
+            animation-name: tada;
+            animation-duration: 1s;
+          }
     }
 
     .footer-section {
@@ -81,6 +88,10 @@
         width: 557px;
         align-items: center;
     }
+
+    .footer-contacts_item--phone {
+        font-size: 20px;
+}
 
     .footer-rights_inf {
         text-align: left;
@@ -95,6 +106,11 @@
     .footer-section {
           width: 830px;
         }
+
+    .footer-contacts_item--phone {
+            font-size: 27px;
+    }
+
         
     .footer-rights_inf {
         font-size: 15px;

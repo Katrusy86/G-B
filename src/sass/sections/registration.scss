@@ -31,7 +31,7 @@
         letter-spacing: 1px;
         line-height: 20px;
         color: #ffffff;
-        font-family: "Montserrat";
+        font-family: "Montserrat", sans-serif;
         font-weight: 600;
         text-align: center;
         margin-bottom: 25px;
@@ -56,38 +56,12 @@
         }
     }
 
-
 }
 
-// .registration_discription {
-//     font-size: 11px;
-//     letter-spacing: 1px;
-//     line-height: 20px;
-//     color: #ffffff;
-//     font-family: "Montserrat";
-//     font-weight: 600;
-//     text-align: center;
-//     margin-bottom: 25px;
-//     margin: 0 auto;
-//     width: 240px;
-// }
-
-// .registration-form {
-//     width: 280px;
-//     margin-top: 20px;
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-// }
-
-// .registration-form_list {
-//      margin-bottom: 40px;
-//      list-style: none;
-//  }
-
-// .registration-form_list:nth-last-child {
-//     margin-bottom: 0;
-// }
+.registration-form_item {
+  position: relative;
+  padding-top: 1.5rem;
+}
 
 .input {
     width: 280px;
@@ -98,7 +72,7 @@
     letter-spacing: 1px;
     line-height: 38px;
     color: #ffffff;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     margin-bottom: 20px;
     padding-left: 10px;
@@ -109,11 +83,13 @@
 
     &:required:focus:invalid {
         border: 2px solid red;
+        background-color: rgba(255,0,0,0.15);
         outline: none;
     }
 
     &:required:focus:valid {
         border: 2px solid green;
+        background-color: rgba(0,255,0,0.15);
         outline: none;
     }
 
@@ -121,6 +97,23 @@
         text-transform: lowercase;
     }
 
+    &:placeholder-shown + label {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+
+}
+
+.registration-form_item label {
+  position: absolute;
+  left: 25px;
+  top: 17px;
+  font-size: 13px;
+  font-weight: 800;
+  background: $decor-color;
+  padding: 2px 5px;
+  font-family: "Montserrat", sans-serif;
+  color: darkslategray;
 }
 
 .button-action {
@@ -140,6 +133,63 @@
     margin: 0 auto;
 }
 
+.button-action:hover,
+.button-action:focus {
+    animation-name: heartBeat;
+    animation-duration: 2s;
+  }
+
+@keyframes tada {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%,
+    60%,
+    80% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes heartBeat {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    14% {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+    28% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    42% {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+    70% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
 @media (min-resolution: 192dpi) {
     .registration {
     background-image: repeating-linear-gradient(-45deg, rgba(63, 63, 59, .4) 0px 3px, transparent 3px 5px), url("../images/photos/registration@2x.png");
@@ -213,10 +263,6 @@
             font-size: 38px;
             letter-spacing: 2px;
             line-height: 50px;
-
-            // &--location{
-            //     display: block;
-            // }
         }
             
         &_discription {
